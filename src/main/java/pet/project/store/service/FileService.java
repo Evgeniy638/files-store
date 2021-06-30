@@ -22,7 +22,7 @@ public class FileService {
             folder.mkdir();
         }
 
-        File file = new File( pathUpload + "/" + id + multipartFile.getOriginalFilename());
+        File file = new File( pathUpload + "/" + id);
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         fileOutputStream.write(multipartFile.getBytes());
     }
